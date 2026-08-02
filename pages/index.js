@@ -108,7 +108,7 @@ function AccessGate({ onUnlock }) {
 
   return (
     <div className="gate glass">
-      <img src="/logo.png" alt="MKS" style={{ height: 112, margin: "0 auto 14px", display: "block" }} />
+      <img src="/logo.png" alt="MKS" style={{ height: 52, margin: "0 auto 14px", display: "block" }} />
       <p style={{ color: "#8ca0c4", fontSize: 14 }}>Digite o código de acesso ao painel.</p>
       <input value={code} onChange={(e) => setCode(e.target.value)} placeholder="CÓDIGO" onKeyDown={(e) => e.key === "Enter" && verificar()} />
       <button className="btn" style={{ width: "100%" }} onClick={verificar} disabled={checking || !code}>
@@ -657,7 +657,7 @@ export default function Painel() {
         {!isOnline && <div className="offline-banner">Você está offline — os dados continuam salvos neste aparelho normalmente.</div>}
 
         <div className="topbar">
-          <img src="/logo.png" alt="MKS" style={{ height: 136 }} />
+          <img src="/logo.png" alt="MKS" style={{ height: 56 }} />
           <div style={{ display: "flex", alignItems: "center", gap: 8, position: "relative" }}>
             <button className="icon-btn" onClick={() => setMoreOpen((v) => !v)} aria-label="Mais opções">•••</button>
             {whatsappHref && (
