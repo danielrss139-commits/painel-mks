@@ -657,7 +657,7 @@ export default function Painel() {
         {!isOnline && <div className="offline-banner">Você está offline — os dados continuam salvos neste aparelho normalmente.</div>}
 
         <div className="topbar">
-          <img src="/logo.png" alt="MKS" style={{ height: 32 }} />
+          <img src="/logo.png" alt="MKS" style={{ height: 15 }} />
           <div style={{ display: "flex", alignItems: "center", gap: 8, position: "relative" }}>
             <button className="icon-btn" onClick={() => setMoreOpen((v) => !v)} aria-label="Mais opções">•••</button>
             {whatsappHref && (
